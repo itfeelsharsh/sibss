@@ -15,10 +15,10 @@ window.CookieConsent.init({
         modalMainButtonTextColor: '#F2F4FF',
     },
     language: {
-        current: 'pt-BR',
-        current: 'pt-BR',
+        current: 'en-IN',
+        current: 'en-IN',
         locale: {
-            'pt-BR': {
+            'en-IN': {
                 barMainText: 'Our website uses cookies that are necessary for you to have the best user experience here.',
                 barLinkSetting: 'Manage cookies',
                 barBtnAcceptAll: 'Accept Cookies',
@@ -43,8 +43,8 @@ window.CookieConsent.init({
             checked: true,
             language: {
                 locale: {
-                    'pt-BR': {
-                        name: 'Required/Required Cookies',
+                    'en-IN': {
+                        name: 'Required Cookies',
                         description: 'Necessary cookies are mandatory as they are essential for the website to function. Without them, pages will not present properly and will not function properly.',
                     }
                 }
@@ -56,7 +56,7 @@ window.CookieConsent.init({
             checked: false,
             language: {
                 locale: {
-                    'pt-BR': {
+                    'en-IN': {
                         name: 'Other Functional Cookies ',
                         description: generateContentObject(`Functional or statistical cookies help the website or third-party services to save what you prefer in your navigation (such as login preferences or features).<br><br>
                         Along with that, we also have information, used to customize advertisements and publications that are displayed to you.<br><br>
@@ -67,19 +67,19 @@ window.CookieConsent.init({
         }
     },
     services: {
-        localcookie: {
+        LocalServer-Cookies-Settings-Upload-Hit: {
             category: 'various',
             type: 'localcookie',
             search: 'localcookie',
             language: {
                 locale: {
-                    'pt-BR': {
+                    'en-IN': {
                         name: 'Local cookies;'
                     }
                 }
             }
         },
-        analytics: {
+        Server_Side_Analytics: {
             category: 'various',
             type: 'dynamic-script',
             search: 'analytics',
@@ -95,13 +95,13 @@ window.CookieConsent.init({
             ],
             language: {
                 locale: {
-                    'pt-BR': {
+                    'en-IN': {
                         name: 'Google Analytics'
                     }
                 }
             }
         },
-        dinamize: {
+        Cookie_Services: {
             category: 'various',
             type: 'dynamic-script',
             search: 'dinamize',
@@ -113,25 +113,25 @@ window.CookieConsent.init({
             ],
             language: {
                 locale: {
-                    'pt-BR': {
-                        name: 'Dinamize'
+                    'en-IN': {
+                        name: 'Dinamize'    
                     }
                 }
             }
         },
-        facebook: {
+        Cookie_Install_Server: {
             category: 'various',
             type: 'dynamic-script',
             search: 'facebook',
             language: {
                 locale: {
-                    'pt-BR': {
+                    'en-IN': {
                         name: 'Facebook'
                     }
                 }
             }
         },
-        adsense: {
+        Random_Cookie: {
             category: "various",
             type: "dynamic-script",
             search: "adsense",
@@ -143,19 +143,19 @@ window.CookieConsent.init({
             ],
             language: {
                 locale: {
-                    'pt-BR': {
+                    'en-IN': {
                         name: "Google Adsense"
                     }
                 }
             }
         },
-        linkedin: {
+        Server_Verification_Cookie: {
             category: "various",
             type: "dynamic-script",
             search: "linkedin",
             language: {
                 locale: {
-                    'pt-BR': {
+                    'en-IN': {
                         name: "Linkedin"
                     }
                 }
