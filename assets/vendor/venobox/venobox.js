@@ -10,8 +10,6 @@
  *
  */
 
-/* global jQuery */
-
 (function($){
     "use strict";
     var autoplay, bgcolor, blockleft, blocknum, blockshare, blocktitle, border, core, container, content, dest, extraCss,
@@ -27,13 +25,11 @@
     var downloadIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 9h-4v-1h4v1zm0-3v1h-4v-1h4zm-2 13l-6-6h4v-3h4v3h4l-6 6z"/></svg>';
    
     $.fn.extend({
-        //plugin name - venobox
         venobox: function(options) {
             var plugin = this;
-            // default options
             var defaults = {
                 arrowsColor : '#B6B6B6',
-                autoplay : false, // same as data-autoplay - thanks @codibit
+                autoplay : false,
                 bgcolor: '#fff',
                 border: '0',
                 closeBackground : 'transparent',
@@ -48,15 +44,15 @@
                 numeratio: false,
                 numerationBackground : '#161617',
                 numerationColor : '#d2d2d2',
-                numerationPosition : 'top', // 'top' || 'bottom'
+                numerationPosition : 'top',
                 overlayClose: true, // disable overlay click-close - thanx @martybalandis
                 overlayColor : 'rgba(23,23,23,0.85)',
-                spinner : 'double-bounce', // available: 'rotating-plane' | 'double-bounce' | 'wave' | 'wandering-cubes' | 'spinner-pulse' | 'chasing-dots' | 'three-bounce' | 'circle' | 'cube-grid' | 'fading-circle' | 'folding-cube'
+                spinner : 'double-bounce',
                 spinColor : '#d2d2d2',
-                titleattr: 'title', // specific attribute to get a title (e.g. [data-title]) - thanx @mendezcode
+                titleattr: 'title',
                 titleBackground: '#161617',
                 titleColor: '#d2d2d2',
-                titlePosition : 'top', // 'top' || 'bottom'
+                titlePosition : 'top',
                 share: [], // ['facebook', 'twitter', 'linkedin', 'pinterest', 'download']
                 cb_pre_open: function(){ return true; }, // Callbacks - thanx @garyee
                 cb_post_open: function(){},
@@ -69,20 +65,14 @@
             };
 
             var option = $.extend(defaults, options);
-
-            // callback plugin initialization
             option.cb_init(plugin);
 
             return this.each(function() {
 
                 obj = $(this);
-
-                // Prevent double initialization - thanx @matthistuff
                 if (obj.data('venobox')) {
                   return true;
                 }
-
-                // method to be used outside the plugin
                 plugin.VBclose = function() {
                     closeVbox();
                 };
@@ -104,15 +94,11 @@
 
                     e.preventDefault();
                     obj = $(this);
-
-                    // callback plugin initialization
                     var cb_pre_open = option.cb_pre_open(obj);
 
                     if (cb_pre_open === false) {
                       return false;
                     }
-
-                    // methods to be used outside the plugin
                     plugin.VBnext = function() {
                         navigateGall(thenext);
                     };
@@ -124,15 +110,12 @@
 
                     framewidth = obj.data('framewidth');
                     frameheight = obj.data('frameheight');
-                    // set data-autoplay="true" for vimeo and youtube videos - thanx @zehfernandes
                     autoplay = obj.data('autoplay') || option.autoplay;
                     border = obj.data('border');
                     bgcolor = obj.data('bgcolor');
                     nextok = false;
                     prevok = false;
                     keyNavigationDisabled = false;
-
-                    // set a different url to be loaded using data-href="" - thanx @pixeline
                     dest = obj.data('href') || obj.attr('href');
                     extraCss = obj.data( 'css' ) || '';
                     title = obj.attr(obj.data('titleattr')) || '';
@@ -300,8 +283,6 @@
                     overlay.css('opacity', '0');
 
                     checknav();
-
-                    // fade in overlay
                     overlay.animate({opacity:1}, 250, function(){
 
                         if (obj.data('vbtype') == 'iframe') {
@@ -318,24 +299,17 @@
                         }
                         option.cb_post_open(obj, gallIndex, thenext, theprev);
                     });
-
-                    /* -------- KEYBOARD ACTIONS -------- */
-                    $('body').keydown(keyboardHandler);
-
                     /* -------- PREVGALL -------- */
                     $('.vbox-prev').on('click', function(){
                         navigateGall(theprev);
                     });
-                    /* -------- NEXTGALL -------- */
                     $('.vbox-next').on('click', function(){
                         navigateGall(thenext);
                     });
 
                     return false;
 
-                }); // click
-
-                /* -------- CHECK NEXT / PREV -------- */
+                });
                 function checknav(){
 
                     thisgall = obj.data('gall');
@@ -374,8 +348,6 @@
                     if (!thenext.length && infinigall === true) {
                       thenext = items.eq(0);
                     }
-
-                    // update gall numeration
                     if (items.length >= 1) {
                       gallIndex = items.index(obj)+1;
                       blocknum.html(gallIndex + ' / ' + items.length);
@@ -387,15 +359,11 @@
                     } else {
                       blocknum.hide();
                     }
-
-                    // update title
                     if (title !== '') {
                       blocktitle.show();
                     } else {
                       blocktitle.hide();
                     }
-
-                    // update navigation arrows
                     if (!thenext.length && infinigall !== true) {
                       $('.vbox-next').css('display', 'none');
                       nextok = false;
@@ -411,15 +379,12 @@
                       $('.vbox-prev').css('display', 'none');
                       prevok = false;
                     }
-                    // activate swipe
                     if (prevok === true || nextok === true) {
                       content.on(TouchMouseEvent.DOWN, onDownEvent);
                       content.on(TouchMouseEvent.MOVE, onMoveEvent);
                       content.on(TouchMouseEvent.UP, onUpEvent);
                     }
                 }
-
-                /* -------- gallery navigation -------- */
                 function navigateGall(destination) {
 
                     if (destination.length < 1) {
@@ -441,8 +406,6 @@
                     autoplay = destination.data('autoplay');
 
                     title = (destination.data('titleattr') && destination.attr(destination.data('titleattr'))) || '';
-
-                    // swipe out item
                     if (destination === theprev) {
                       content.addClass('vbox-animated').addClass('swipe-right');
                     }
@@ -482,23 +445,19 @@
                         option.cb_after_nav(obj, gallIndex, thenext, theprev);
                     });
                 }
-
-                /* -------- KEYBOARD HANDLER -------- */
                 function keyboardHandler(e) {
-                    if (e.keyCode === 27) { // esc
+                    if (e.keyCode === 27) {
                       closeVbox();
                     }
 
-                    if (e.keyCode == 37 && prevok === true) { // left
+                    if (e.keyCode == 37 && prevok === true) {
                       navigateGall(theprev);
                     }
 
-                    if (e.keyCode == 39 && nextok === true) { // right
+                    if (e.keyCode == 39 && nextok === true) {
                       navigateGall(thenext);
                     }
                 }
-
-                /* -------- CLOSE VBOX -------- */
                 function closeVbox(){
 
                     var cb_pre_close = option.cb_pre_close(obj, gallIndex, thenext, theprev);
@@ -517,11 +476,9 @@
                       option.cb_post_close();
                     });
                 }
-
-                /* -------- CLOSE CLICK -------- */
                 var closeclickclass = '.vbox-overlay';
                 if(!option.overlayClose){
-                    closeclickclass = '.vbox-close'; // close only on X
+                    closeclickclass = '.vbox-close';
                 }
 
                 $('body').on('click touchstart', closeclickclass, function(e){
@@ -590,15 +547,11 @@
                         }
                     }
                 }
-
-                /* == GLOBAL DECLERATIONS == */
                 var TouchMouseEvent = {
                     DOWN: "touchmousedown",
                     UP: "touchmouseup",
                     MOVE: "touchmousemove"
                 };
-
-                /* == EVENT LISTENERS == */
                 var onMouseEvent = function(event) {
                     var type;
                     switch (event.type) {
@@ -633,8 +586,6 @@
                     }
                     $(event.target).trigger(touchMouseEvent);
                 };
-
-                /* == NORMALIZE == */
                 var normalizeEvent = function(type, original, x, y) {
                     return $.Event(type, {
                         pageX: x,
@@ -642,8 +593,6 @@
                         originalEvent: original
                     });
                 };
-
-                /* == LISTEN TO ORIGINAL EVENT == */
                 if ("ontouchstart" in window) {
                     $(document).on("touchstart", onTouchEvent);
                     $(document).on("touchmove", onTouchEvent);
@@ -654,8 +603,6 @@
                     $(document).on("mouseout", onMouseEvent);
                     $(document).on("mousemove", onMouseEvent);
                 }
-
-                /* -------- LOAD AJAX -------- */
                 function loadAjax(){
                   $.ajax({
                   url: dest,
@@ -669,22 +616,14 @@
                       updateoverlay();
                   });
                 }
-
-                /* -------- LOAD IFRAME -------- */
                 function loadIframe(){
-                    content.html('<iframe class="venoframe" src="'+dest+'"></iframe>');
-                  //  $('.venoframe').load(function(){ // valid only for iFrames in same domain
-                    updateoverlay();
-                  //  });
-                }
+                    content.html('<iframe class="venoframe" src="'+dest+'"></iframe>');eoverlay();
 
                 /* -------- LOAD VIDEOs -------- */
                 function loadVid(autoplay){
 
                     var player;
                     var videoObj = parseVideo(dest);
-
-                    // set rel=0 to hide related videos at the end of YT + optional autoplay
                     var stringAutoplay = autoplay ? "?rel=0&autoplay=1" : "?rel=0";
                     var queryvars = stringAutoplay + getUrlParameter(dest);
 
@@ -696,10 +635,6 @@
                     content.html('<iframe class="venoframe vbvid" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay" frameborder="0" src="'+player+videoObj.id+queryvars+'"></iframe>');
                     updateoverlay();
                 }
-
-                /**
-                * Parse Youtube or Vimeo videos and get host & ID
-                */
                 function parseVideo (url) {
                     url.match(/(http:|https:|)\/\/(player.|www.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com))\/(video\/|embed\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(\&\S+)?/);
                     var type;
@@ -713,10 +648,6 @@
                         id: RegExp.$6
                     };
                 }
-
-                /**
-                * get additional video url parameters
-                */
                 function getUrlParameter(name) {
                   var result = '';
                   var sPageURL = decodeURIComponent(name);
@@ -733,14 +664,10 @@
                   }
                   return encodeURI(result);
                 }
-
-                /* -------- LOAD INLINE -------- */
                 function loadInline(){
                     content.html('<div class="vbox-inline">'+$(dest).html()+'</div>');
                     updateoverlay();
                 }
-
-                /* -------- PRELOAD IMAGE -------- */
                 function preloadFirst(){
                     images = content.find('img');
 
@@ -754,8 +681,6 @@
                         updateoverlay();
                     }
                 }
-
-                /* -------- FADE-IN THE NEW CONTENT -------- */
                 function updateoverlay(){
 
                     blocktitle.html(title);
@@ -769,8 +694,6 @@
                     $('img.vbox-figlio').on('dragstart', function(event) {
                         event.preventDefault();
                     });
-
-                    // reset content scroll
                     container.scrollTop(0);
 
                     updateOL();
@@ -783,8 +706,6 @@
 
                     option.cb_content_loaded(obj, gallIndex, thenext, theprev);
                 }
-
-                /* -------- CENTER FRAME -------- */
                 function updateOL(){
 
                     var sonH = content.outerHeight();
@@ -805,7 +726,7 @@
                         setTimeout(updateOL(), 800);
                     }
                 });
-            }); // each
+            });
         } // venobox
     }); // extend
 })(jQuery);

@@ -4,10 +4,6 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     color: #000000;
@@ -25,33 +21,6 @@ body {
   h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins", sans-serif;
   }
-  /* body {
-    overflow-x: hidden; 
-    
-  }
-
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  } */
-  
-  /*--------------------------------------------------------------
-  # Back to top button
-  --------------------------------------------------------------*/
   .back-to-top {
     position: fixed;
     display: none;
@@ -77,20 +46,11 @@ body {
     background: #170080;
     color: #fff;
   }
-  
-
-  /*--------------------------------------------------------------
-  # Disable aos animation delay on mobile devices
-  --------------------------------------------------------------*/
   @media screen and (max-width: 768px) {
     [data-aos-delay] {
       transition-delay: 0 !important;
     }
   }
-  
-  /*--------------------------------------------------------------
-  # Header
-  --------------------------------------------------------------*/
   #header {
     transition: all 0.5s;
     z-index: 997;
@@ -128,11 +88,6 @@ body {
       font-size: 28px;
     }
   }
-  
-  /*--------------------------------------------------------------
-  # Navigation Menu
-  --------------------------------------------------------------*/
-  /* Desktop Navigation */
   .nav-menu ul {
     margin: 0;
     padding: 0;
@@ -257,8 +212,6 @@ body {
       content: "\ea9d";
     }
   }
-  
-  /* Get Startet Button */
   .get-started-btn {
     margin-left: 25px;
     color: #fff;
@@ -283,8 +236,6 @@ body {
       padding: 6px 18px;
     }
   }
-  
-  /* Mobile Navigation */
   .mobile-nav-toggle {
     position: fixed;
     right: 15px;
@@ -390,10 +341,6 @@ body {
   .mobile-nav-active .mobile-nav-toggle i {
     color: #fff;
   }
-  
-  /*--------------------------------------------------------------
-  # Hero Section
-  --------------------------------------------------------------*/
   #hero {
     width: 100%;
     height: 100vh;
@@ -515,10 +462,6 @@ body {
       transform: translateY(-10px);
     }
   }
-  
-  /*--------------------------------------------------------------
-  # Sections General
-  --------------------------------------------------------------*/
   section {
     padding: 100px 0;
     overflow: hidden;
@@ -557,10 +500,6 @@ body {
   .section-title p {
     margin-bottom: 0;
   }
-  
-  /*--------------------------------------------------------------
-  # About
-  --------------------------------------------------------------*/
   .about {
     padding: 5%;
     text-align: center;
@@ -603,9 +542,6 @@ body {
     max-width: 560px;
     height: 315px;
     margin: auto;
-    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  }
-  
   /* Then style the iframe to fit in the container div with full height and width */
   .youtube {
     position: absolute;
@@ -643,10 +579,6 @@ body {
     right: 20px;
     top: 12px;
   }
-  
-  /*--------------------------------------------------------------
-  # Counts
-  --------------------------------------------------------------*/
   .counts {
     background: linear-gradient(90deg, rgba(13, 169, 241, 0.925) 0%, rgba(39, 189, 216, 0.5) 100%), url("../img/counts-bg.png") center center no-repeat;
     padding: 80px 0 60px 0;
@@ -666,10 +598,6 @@ body {
     font-size: 15px;
     color: rgba(255, 255, 255, 0.8);
   }
-  
-  /*--------------------------------------------------------------
-  # Services
-  --------------------------------------------------------------*/
   .services .icon-box {
     text-align: center;
     padding: 70px 20px 80px 20px;
@@ -798,10 +726,6 @@ body {
   .services .iconbox-teal:hover .icon path {
     fill: #11dbcf;
   }
-  
-  /*--------------------------------------------------------------
-  # Features
-  --------------------------------------------------------------*/
   .features .icon-box h4 {
     font-size: 20px;
     font-weight: 700;
@@ -826,10 +750,6 @@ body {
     background-size: cover;
     min-height: 400px;
   }
-  
-  /*--------------------------------------------------------------
-  # Testimonials
-  --------------------------------------------------------------*/
   .testimonials .testimonial-item {
     box-sizing: content-box;
     min-height: 320px;
@@ -911,10 +831,6 @@ body {
       margin: 30px 10px;
     }
   }
-  
-  /*--------------------------------------------------------------
-  # Portfolio
-  --------------------------------------------------------------*/
   .portfolio .portfolio-item {
     margin-bottom: 30px;
   }
@@ -1035,10 +951,6 @@ body {
     opacity: 1;
     bottom: calc(50% - 50px);
   }
-  
-  /*--------------------------------------------------------------
-  # Pricing
-  --------------------------------------------------------------*/
   .pricing .box {
     padding: 20px;
     background: #fff;
@@ -1145,10 +1057,6 @@ body {
     background: #5846f9;
     color: #fff;
   }
-  
-  /*--------------------------------------------------------------
-  # Frequently Asked Questions
-  --------------------------------------------------------------*/
   .faq {
     background: linear-gradient(42deg, #46f973 0%, #e5e2e9 100%);
   }
@@ -1237,10 +1145,6 @@ body {
       padding: 0;
     }
   }
-  
-  /*--------------------------------------------------------------
-  # Contact
-  --------------------------------------------------------------*/
   .contact .info-box {
     color: #444444;
     text-align: center;
@@ -1374,10 +1278,6 @@ body {
       transform: rotate(360deg);
     }
   }
-  
-  /*--------------------------------------------------------------
-  # Breadcrumbs
-  --------------------------------------------------------------*/
   .breadcrumbs {
     padding: 15px 0;
     background: #f2f6f9;
@@ -1421,10 +1321,6 @@ body {
       display: inline-block;
     }
   }
-  
-  /*--------------------------------------------------------------
-  # Portfolio Details
-  --------------------------------------------------------------*/
   .portfolio-details {
     padding: 30px 0 60px 0;
   }
@@ -1505,10 +1401,6 @@ body {
       margin-top: 30px;
     }
   }
-  
-  /*--------------------------------------------------------------
-  # Footer
-  --------------------------------------------------------------*/
   #footer {
     color: #fff;
     font-size: 14px;
@@ -1668,8 +1560,6 @@ body {
     color: #fff;
     text-decoration: none;
   }
-
-  /*''''''''''''Fields-Home''''''''''''*/
 
 .page-bg{
   height: 100vh;
