@@ -22,6 +22,8 @@ Or download the [latest release](https://github.com/OwlCarousel2/OwlCarousel2/re
 Add jQuery via the "webpack.ProvidePlugin" to your webpack configuration:
     
     const webpack = require('webpack');
+    
+    //...
     plugins: [
         new webpack.ProvidePlugin({
           $: 'jquery',
@@ -29,6 +31,7 @@ Add jQuery via the "webpack.ProvidePlugin" to your webpack configuration:
           'window.jQuery': 'jquery'
         }),
     ],
+    //...
 
 Load the required stylesheet and JS:
 

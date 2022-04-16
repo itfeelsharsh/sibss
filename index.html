@@ -117,8 +117,10 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 56.25%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
+
+/* Then style the iframe to fit in the container div with full height and width */
 .responsive-iframe {
   position: absolute;
   top: 0;
@@ -239,7 +241,7 @@
       <div class="copyright-wrap d-md-flex py-4">
         <div class="mr-md-auto text-center text-md-left">
           <div class="copyright">
-            &copy; Copyright <strong><span>SIBSS</span></strong>
+            &copy; Copyright <strong><span>SIBSS</span></strong>. All Rights Reserved
           </div>
           <div class="credits">
                           Originally by <a href="https://getbootstrap.com/">Bootstrap</a> Designed by <a href="https://twitter.com/itfeelsharsh">Harsh</a>

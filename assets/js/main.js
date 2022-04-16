@@ -6,6 +6,9 @@
 */
 !(function($) {
   "use strict";
+
+
+  // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 16;
   if (window.matchMedia("(max-width: 991px)").matches) {
     scrolltoOffset += 16;
@@ -40,6 +43,8 @@
       }
     }
   });
+
+  // Activate smooth scroll on page load with hash links in the url
   $(document).ready(function() {
     if (window.location.hash) {
       var initial_nav = window.location.hash;
@@ -51,6 +56,8 @@
       }
     }
   });
+
+  // Mobile Navigation
   if ($('.nav-menu').length) {
     var $mobile_nav = $('.nav-menu').clone().prop({
       class: 'mobile-nav d-lg-none'
@@ -84,6 +91,8 @@
   } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
     $(".mobile-nav, .mobile-nav-toggle").hide();
   }
+
+  // Navigation active state on scroll
   var nav_sections = $('section');
   var main_nav = $('.nav-menu, #mobile-nav');
 
@@ -105,6 +114,8 @@
       }
     });
   });
+
+  // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
@@ -116,6 +127,8 @@
   if ($(window).scrollTop() > 100) {
     $('#header').addClass('header-scrolled');
   }
+
+  // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
@@ -130,10 +143,14 @@
     }, 1500, 'easeInOutExpo');
     return false;
   });
+
+  // jQuery counterUp
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
     time: 1000
   });
+
+  // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
     autoplay: true,
     dots: true,
@@ -150,6 +167,8 @@
       }
     }
   });
+
+  // Porfolio isotope and filter
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
@@ -164,16 +183,22 @@
       });
       aos_init();
     });
+
+    // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
       $('.venobox').venobox();
     });
   });
+
+  // Portfolio details carousel
   $(".portfolio-details-carousel").owlCarousel({
     autoplay: true,
     dots: true,
     loop: true,
     items: 1
   });
+
+  // Init AOS
   function aos_init() {
     AOS.init({
       duration: 1000,
