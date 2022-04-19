@@ -1,6 +1,6 @@
 {
-  "short_name": "Sibss",
-  "name": "Sibss Website",
+  "short_name": "SIBSS",
+  "name": "SIBSS- an organization for youth by youth.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,18 +8,15 @@
       "type": "image/x-icon"
     },
     {
-      "src": "sibss-logo.webp",
+      "src": "favicon.ico",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "sibss-logo.webp",
+      "src": "favicon.ico",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "start_url": "."
 }

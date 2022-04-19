@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #000000;
   }
   
@@ -23,7 +23,7 @@ body {
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Poppins", sans-serif;
+    
   }
   /* body {
     overflow-x: hidden; 
@@ -157,7 +157,7 @@ body {
     font-size: 15px;
     font-weight: 600;
     padding: 0 3px;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
   .nav-menu > ul > li > a:before {
@@ -220,7 +220,7 @@ body {
   
   .nav-menu .drop-down > a:after {
     content: "\ea99";
-    font-family: IcoFont;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-left: 5px;
   }
   
@@ -241,7 +241,7 @@ body {
   
   .nav-menu .drop-down .drop-down > a:after {
     content: "\eaa0";
-    font-family: IcoFont;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: absolute;
     right: 15px;
   }
@@ -342,7 +342,7 @@ body {
   
   .mobile-nav .drop-down > a:after {
     content: "\ea99";
-    font-family: IcoFont;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-left: 10px;
     position: absolute;
     right: 15px;
@@ -431,7 +431,7 @@ body {
   }
   
   #hero .btn-get-started {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 1px;
@@ -620,7 +620,7 @@ body {
   
     
   .about .content .read-more {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 1px;
@@ -657,7 +657,7 @@ body {
     display: block;
     color: #fff;
     font-weight: 600;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
   .counts .counters p {
@@ -940,7 +940,7 @@ body {
     margin-bottom: 5px;
     transition: all 0.3s ease-in-out;
     border-radius: 5px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
   .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
@@ -1538,7 +1538,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
   #footer .footer-top h4 {
