@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,2BACE,eACF,CAEA,GACE,iBACF","file":"main.86ea0ebc.chunk.css","sourcesContent":["#firebaseui-auth-container {\n  max-height: 5rem;\n}\n\nh1 {\n  text-align: center;\n}\n"]}
