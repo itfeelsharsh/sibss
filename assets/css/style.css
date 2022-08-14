@@ -429,7 +429,7 @@ body {
     color: rgb(255, 255, 255);
     margin: 10px 0 0 0;
     font-size: 20px;
-    text-shadow: 0 0 3px #000000, 0 0 5px #ffffff;
+    text-shadow: 0 0 20px #000000, 8px 8px 20px #000000;
   }
   
   #hero .btn-get-started {
@@ -444,12 +444,14 @@ body {
     margin-top: 30px;
     color: rgb(60, 255, 0);
     border: 2px solid #fff;
-    text-shadow: 0 0 3px #000000, 0 0 5px #08f710;
+    text-shadow: 0 0 3px #000000, 0 0 20px #08f710;
   }
   
   #hero .btn-get-started:hover {
     background: #fff;
     color: #5846f9;
+    text-shadow: 0 0 3px #000000, 0 0 5px #08f710;
+    
   }
   
   #hero .animated {
