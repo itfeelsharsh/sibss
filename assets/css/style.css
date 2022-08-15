@@ -397,7 +397,7 @@ body {
   #hero {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(45deg, rgba(249, 139, 29, 0.027) 0%, rgba(257, 150, 55, 0.9) 100%), url("../img/india_flag_texture_132874_3840x2400.webp") center center no-repeat;
+    background: linear-gradient(45deg, rgba(249, 139, 29, 0.027) 0%, rgba(257, 150, 55, 0.9) 100%), url("../img/hero-bg.webp") center center no-repeat;
     background-size: cover;
   }
   
@@ -408,7 +408,7 @@ body {
   #hero2 {
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(248, 136, 24, 0.075) 0%, rgba(257, 150, 55, 0.9) 100%), url("../img/india_flag_texture_132874_3840x2400.webp") center center no-repeat;
+    background: linear-gradient(45deg, rgba(248, 136, 24, 0.075) 0%, rgba(257, 150, 55, 0.9) 100%), url("../img/hero-bg.webp") center center no-repeat;
     background-size: cover;
   }
   
@@ -421,8 +421,8 @@ body {
     font-size: 52px;
     font-weight: 700;
     line-height: 64px;
-    color: orange;
-    text-shadow: 0 0 3px #000000, 0 0 5px #ff3700;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 20px #000000, 8px 8px 20px #000000;
   }
   
   #hero h2 {
@@ -442,15 +442,15 @@ body {
     border-radius: 5px;
     transition: 0.5s;
     margin-top: 30px;
-    color: rgb(60, 255, 0);
+    color: rgb(251, 251, 251);
     border: 2px solid #fff;
-    text-shadow: 0 0 3px #000000, 0 0 20px #08f710;
+    text-shadow: 0 0 20px #000000, 8px 8px 20px #ffffff;
   }
   
   #hero .btn-get-started:hover {
-    background: #fff;
+    background: #fff; 
     color: #5846f9;
-    text-shadow: 0 0 3px #000000, 0 0 5px #08f710;
+    text-shadow: 0 0 20px #000000, 8px 8px 20px #ffffff;
     
   }
   
@@ -1518,7 +1518,7 @@ body {
     color: #fff;
     text-shadow: 0 0 20px #000000, 0 0 20px #0408f1;
     font-size: 14px;
-    background: linear-gradient(45deg, rgba(19, 136, 8, 0.651) 0%, rgba(19, 136, 8, 0) 100%), url("../img/india_flag_texture_132874_3840x2400.webp") center center no-repeat;
+    background: linear-gradient(45deg, rgba(19, 136, 8, 0.651) 0%, rgba(19, 136, 8, 0) 100%), url("../img/hero-bg.webp") center center no-repeat;
     background-size: cover;
   }
   
