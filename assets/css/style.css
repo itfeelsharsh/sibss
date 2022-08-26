@@ -77,6 +77,28 @@ body {
     background: #170080;
     color: #fff;
   }
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* iPads */
+         body {-webkit-touch-callout: none;}
+         .protected {
+           -webkit-touch-callout: none;
+           -user-select: none; 
+          pointer-events:none;
+         }  
+    }
+    
+    @media only screen and (max-device-width: 480px) {
+    /* iPhone [portrait + landscape] */
+       body {-webkit-touch-callout: none;}
+       .protected {-webkit-touch-callout: none;
+         -user-select: none; 
+      pointer-events:none;
+       }
+     }
+     #just-try-iphone {
+         display:block;
+     }
   
 
   /*--------------------------------------------------------------
