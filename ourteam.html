@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>  
+<head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -15,7 +15,9 @@
   <link href="./assets/img/sibss-logo.webp" rel="icon">
   <link href="./assets/img/sibss-logo.webp" rel="touch-icon">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
 
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,21 +29,21 @@
 
   <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/sibss-logo.webp">
   <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/sibss-logo.webp">
-  <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/sibss-logo.webp">    
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/sibss-logo.webp">
   <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/sibss-logo.webp">
   <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/sibss-logo.webp">
   <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/sibss-logo.webp">
   <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/sibss-logo.webp">
   <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/sibss-logo.webp">
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/sibss-logo.webp">   
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/sibss-logo.webp">
 
-    <meta property="og:type" content="website">
-  <meta property="og:image" content="./assets/img/sibss-logo.webp"/> 
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://sibss.org.in/assets/logos/SIBSS-logo-transparent-500x500.png" />
   <meta property="og:site_name" content="SIBSS">
   <meta property="twitter:site" content="@SIBSS_in">
   <meta property="twitter:site:id" content="@SIBSS_in">
   <meta property="twitter:creator" content="@SIBSS_in">
-  <meta property="twitter:creator:id" content="@SIBSS_in">  
+  <meta property="twitter:creator:id" content="@SIBSS_in">
 
   <script type="application/ld+json">
     {
@@ -51,254 +53,276 @@
       "logo": "https://sibss.org.in/assets/logos/SIBSS-logo-black-1500x1500.jpg"
     }
     </script>
-  
-  <script src="./assets/vendor/vendor/cookieconsent/cookieconsent.min.js"></script>
-  <script src="./assets/vendor/vendor/index.js"></script>
-  <link rel="stylesheet" href="./assets/vendor/vendor/style.css">
+
+
 
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body >
+<body>
 
   <script>
-    document.addEventListener("contextmenu", function(event){
-    event.preventDefault();
-    console.log('Right Click is Disabled');    
+    document.addEventListener("contextmenu", function (event) {
+      event.preventDefault();
+      console.log('Right Click is Disabled');
     }, false);
 
-    
+
 
     function absorbEvent_(event) {
-  var e = event || window.event;
-  e.preventDefault && e.preventDefault();
-  e.stopPropagation && e.stopPropagation();
-  e.cancelBubble = true;
-  e.returnValue = false;
-  return false;
-}
+      var e = event || window.event;
+      e.preventDefault && e.preventDefault();
+      e.stopPropagation && e.stopPropagation();
+      e.cancelBubble = true;
+      e.returnValue = false;
+      return false;
+    }
 
-function preventLongPressMenu(node) {
-  node.ontouchstart = absorbEvent_;
-  node.ontouchmove = absorbEvent_;
-  node.ontouchend = absorbEvent_;
-  node.ontouchcancel = absorbEvent_;
-}
+    function preventLongPressMenu(node) {
+      node.ontouchstart = absorbEvent_;
+      node.ontouchmove = absorbEvent_;
+      node.ontouchend = absorbEvent_;
+      node.ontouchcancel = absorbEvent_;
+    }
 
-function init() {
-  preventLongPressMenu(document.getElementById('theimage'));
-}    
-    </script>
+    function init() {
+      preventLongPressMenu(document.getElementById('theimage'));
+    }    
+  </script>
 
-  
+
   <header id="header" class="fixed-top ">
     <div class="container-fluid">
 
       <div class="row justify-content-center">
         <div class="col-xl-9 d-flex align-items-center">
-          
+
           <h1 class="logo mr-auto"><a href="index.html">SIBSS</a></h1>
-    
+
           <nav class="nav-menu d-none d-lg-block">
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
-              <li><a class="active"  href="ourteam.html">Team</a></li>
+              <li><a class="active" href="ourteam.html">Team</a></li>
               <li><a href="faq.html">FaQ</a></li>
               <li><a href="/newsroom/index.html">Newsroom</a></li>
             </ul>
           </nav><!-- .nav-menu -->
 
-          
+
         </div>
       </div>
 
     </div>
   </header><!-- End Header -->
   <!-- ======= Hero Section ======= -->
-  
- 
-    <!-- ======= Testimonials Section ======= -->
 
-    
-    <section id="hero" class="d-flex aligh-items-center">
-      <style> #hero {
-           height: 10% !important
-       }
-       </style>
-           <div class="container">
-             <h1 class="display-1 text-center">Our Team</h1>
-             <h2 class="display-1 text-center" >Meet People Who Make SIBSS Better!</h2>
-           </div>
-    
-   </section>
 
-    <section id="testimonials" class="testimonials section-bg">
-        <div class="container" >
+  <!-- ======= Testimonials Section ======= -->
 
-  
-          <div class="testimonials-slider swiper"  data-aos-delay="100">
-            <div class="swiper-wrapper">
-  
-            <div id="yuvraj">
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Hello Revolutionaries, Jai Hind🔥
-                    In our Incredible India, you'll find people of different kinds, different ideologies, but it's us what we want to become, either those who just complaint about stuff or those who admit and work on solution for the same, who brings revolution, a change, a fire to do anything for this lovely nation....let's create an India where everyone keeps their country as priority even before themselves....let's bring the golden Era again by uniting for that love for that connection towards this motherland! Let's make everyone join this revolution to create change in the nation ✨ making difference and taking our nation to the top of the world...this all will be a combined effort and it'll be possible only when you make the decision to do so.
-                    JAI HIND 🔥 
-                    HAR KAAM DESH KE NAAM
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img draggable="false" src="assets/img/team-members/yuv.jpg" class="testimonial-img" alt="Yuvraj">
-                  <h3>Yuvraj Singh</h3>
-                  <h4>Founder</h4>
-                </div>
+
+  <section id="hero" class="d-flex aligh-items-center">
+    <style>
+      #hero {
+        height: 10% !important
+      }
+    </style>
+    <div class="container">
+      <h1 class="display-1 text-center">Our Team</h1>
+      <h2 class="display-1 text-center">Meet People Who Make SIBSS Better!</h2>
+    </div>
+
+  </section>
+
+  <section id="testimonials" class="testimonials section-bg">
+    <div class="container">
+
+
+      <div class="testimonials-slider swiper" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div id="yuvraj">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Hello Revolutionaries, Jai Hind🔥
+                  In our Incredible India, you'll find people of different kinds, different ideologies, but it's us what
+                  we want to become, either those who just complaint about stuff or those who admit and work on solution
+                  for the same, who brings revolution, a change, a fire to do anything for this lovely nation....let's
+                  create an India where everyone keeps their country as priority even before themselves....let's bring
+                  the golden Era again by uniting for that love for that connection towards this motherland! Let's make
+                  everyone join this revolution to create change in the nation ✨ making difference and taking our nation
+                  to the top of the world...this all will be a combined effort and it'll be possible only when you make
+                  the decision to do so.
+                  JAI HIND 🔥
+                  HAR KAAM DESH KE NAAM
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img draggable="false" src="assets/img/team-members/yuv.jpg" class="testimonial-img" alt="Yuvraj">
+                <h3>Yuvraj Singh</h3>
+                <h4>Founder</h4>
               </div>
             </div>
-              <!-- End testimonial item -->
-              <br><br>
-  
-           <div id="rishabh" > 
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Remember always, you've got to live, by chance, but you have to live, this becomes your duty. Be grateful you got life, actually living in any situation is far better than death. You can't end up your life, you've got to do big with it.
-                    We here at SIBSS, provide everyone a platform. Live for your nation, die while living for it.
-                    Har kaam desh ke naam.                 
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img draggable="false" src="assets/img/team-members/xavier.jpg" class="testimonial-img" alt="">
-                  <h3>Rishabh Jain</h3>
-                  <h4>Founder</h4>
-                </div>
-              </div>
-            </div>  
-              <!-- End testimonial item -->
-           
-
-              <br><br>
-
-
-            <div id="sanjeev-airplen">   
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    We can bring change and make India a better place
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img draggable="false" src="assets/img/team-members/airplane.jpg" class="testimonial-img" alt="">
-                  <h3>Sanjeev</h3>
-                  <h4>Chief operating head</h4>
-                </div>
-              </div>
-            </div>
-              <!-- End testimonial item -->
-
-              <br><br>
-
-            <div id="pallavi" >    
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    What SIBSS does to ensure that the masses know plenty about the nation we live in, is commendable. Starting from a random conversation to coming this far, it was certainly a great experience, I'm glad to have been a small part of their work. This makes me happy that I'm able to do something towards the betterment. I'm sure SIBSS will go a long way mitigating all the hurdles coming through. We'll continue to do the good work and that one day, we will see our nation truly an idealistic one.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img draggable="false" src="assets/img/team-members/pallavi.jpg" class="testimonial-img" alt="">
-                  <h3>Pallavi</h3>
-                  <h4>National general manager</h4>
-                </div>
-              </div>
-            </div>
-
-              <br><br>
-             
-            <div id="ayush-gudda">
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    How to be Lucky?
-When you find an opportunity, you grab it. 
-How do I see it, SIBSS is that opportunity for youth. A great nation cannot be formed alone, we all will have to join hands for that. 
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img draggable="false" src="assets/img/team-members/gudda.jpg" class="testimonial-img" alt="">
-                  <h3>Ayush Gupta</h3>
-                  <h4>Chief marketing officer</h4>
-                </div>
-              </div><!-- End testimonial item -->
-            </div>  
-
-              <br><br>
-
-            <div id="kartik"> 
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    SIBSS..is not just a short form..
-                    Serve India Before Serving Self...name itself of the organization is sufficient enough to convey the meaning and motive of the community.
-                    SIBSS is growing rapidly and is an organization that lets people know about the happenings that affect our country....it helps ppl to develop the feeling of love towards india and indans and that feeling continues to grow stronger tym to Tym...
-                    Jai Hind 🇮🇳!! 
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img draggable="false" src="assets/img/team-members/kartik.jpg" class="testimonial-img" alt="">
-                  <h3>Kartik</h3>
-                  <h4>Public relation director</h4>
-                </div>
-              </div>
-            </div>                                                                                     
-
-              <br><br>
-
-              <div id="aum-cats">
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Serve India Before Serving Self, or in short SIBSS if explained in my words is not an organization or a group of people. Its an idea to change the current state of our motherland, fought for independence decades ago, and carrying forth this great idea of "change" is SIBSS.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img draggable="false" src="assets/img/team-members/aumvats.webp" class="testimonial-img" alt="">
-                  <h3>Aum Vats</h3>
-                  <h4>Advisor + twitter(social media team)</h4>
-                </div>
-              </div>
-            </div>
-
-              <br><br>
-
-
-              <div id="riya" >
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    SIBSS is an organization which tries to make India a developed country by making youth aware, how great India is, as the youth is so much influenced by the western culture that we are forgetting our own culture which named us "Golden Bird" in the past. SIBSS inculcates the feeling of patriotism and helping others selflessly. It also inculcates the feeling of proud in youth by making them aware of the great bravehearts because of whom we got  independence and thriving it successfully.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img draggable="false" src="assets/img/team-members/riya.jpg" class="testimonial-img" alt="">
-                  <h3>Riya</h3>
-                  <h4>Instagram (social media team)</h4>
-                </div>
-              </div>
-            </div>
-
-
-
-              <!-- End testimonial item -->
-  
-            </div>
-            <div class="swiper-pagination"></div>
           </div>
-  
+          <!-- End testimonial item -->
+          <br><br>
+
+          <div id="rishabh">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Remember always, you've got to live, by chance, but you have to live, this becomes your duty. Be
+                  grateful you got life, actually living in any situation is far better than death. You can't end up
+                  your life, you've got to do big with it.
+                  We here at SIBSS, provide everyone a platform. Live for your nation, die while living for it.
+                  Har kaam desh ke naam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img draggable="false" src="assets/img/team-members/xavier.jpg" class="testimonial-img" alt="">
+                <h3>Rishabh Jain</h3>
+                <h4>Founder</h4>
+              </div>
+            </div>
+          </div>
+          <!-- End testimonial item -->
+
+
+          <br><br>
+
+
+          <div id="sanjeev-airplen">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  We can bring change and make India a better place
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img draggable="false" src="assets/img/team-members/airplane.jpg" class="testimonial-img" alt="">
+                <h3>Sanjeev</h3>
+                <h4>Chief operating head</h4>
+              </div>
+            </div>
+          </div>
+          <!-- End testimonial item -->
+
+          <br><br>
+
+          <div id="pallavi">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  What SIBSS does to ensure that the masses know plenty about the nation we live in, is commendable.
+                  Starting from a random conversation to coming this far, it was certainly a great experience, I'm glad
+                  to have been a small part of their work. This makes me happy that I'm able to do something towards the
+                  betterment. I'm sure SIBSS will go a long way mitigating all the hurdles coming through. We'll
+                  continue to do the good work and that one day, we will see our nation truly an idealistic one.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img draggable="false" src="assets/img/team-members/pallavi.jpg" class="testimonial-img" alt="">
+                <h3>Pallavi</h3>
+                <h4>National general manager</h4>
+              </div>
+            </div>
+          </div>
+
+          <br><br>
+
+          <div id="ayush-gudda">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  How to be Lucky?
+                  When you find an opportunity, you grab it.
+                  How do I see it, SIBSS is that opportunity for youth. A great nation cannot be formed alone, we all
+                  will have to join hands for that.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img draggable="false" src="assets/img/team-members/gudda.jpg" class="testimonial-img" alt="">
+                <h3>Ayush Gupta</h3>
+                <h4>Chief marketing officer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+
+          <br><br>
+
+          <div id="kartik">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  SIBSS..is not just a short form..
+                  Serve India Before Serving Self...name itself of the organization is sufficient enough to convey the
+                  meaning and motive of the community.
+                  SIBSS is growing rapidly and is an organization that lets people know about the happenings that affect
+                  our country....it helps ppl to develop the feeling of love towards india and indans and that feeling
+                  continues to grow stronger tym to Tym...
+                  Jai Hind 🇮🇳!!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img draggable="false" src="assets/img/team-members/kartik.jpg" class="testimonial-img" alt="">
+                <h3>Kartik</h3>
+                <h4>Public relation director</h4>
+              </div>
+            </div>
+          </div>
+
+          <br><br>
+
+          <div id="aum-cats">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Serve India Before Serving Self, or in short SIBSS if explained in my words is not an organization or
+                  a group of people. Its an idea to change the current state of our motherland, fought for independence
+                  decades ago, and carrying forth this great idea of "change" is SIBSS.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img draggable="false" src="assets/img/team-members/aumvats.webp" class="testimonial-img" alt="">
+                <h3>Aum Vats</h3>
+                <h4>Advisor + twitter(social media team)</h4>
+              </div>
+            </div>
+          </div>
+
+          <br><br>
+
+
+          <div id="riya">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  SIBSS is an organization which tries to make India a developed country by making youth aware, how
+                  great India is, as the youth is so much influenced by the western culture that we are forgetting our
+                  own culture which named us "Golden Bird" in the past. SIBSS inculcates the feeling of patriotism and
+                  helping others selflessly. It also inculcates the feeling of proud in youth by making them aware of
+                  the great bravehearts because of whom we got independence and thriving it successfully.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img draggable="false" src="assets/img/team-members/riya.jpg" class="testimonial-img" alt="">
+                <h3>Riya</h3>
+                <h4>Instagram (social media team)</h4>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- End testimonial item -->
+
         </div>
-      </section><!-- End Testimonials Section -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section><!-- End Testimonials Section -->
 
 
   </main><!-- End #main -->
@@ -310,37 +334,37 @@ How do I see it, SIBSS is that opportunity for youth. A great nation cannot be f
       <div class="container">
         <!-- <div class="row"> -->
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <p>
-              <strong>Email:</strong> sibssorg@gmail.com<br>
-            </p>
-          </div>
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <p>
+            <strong>Email:</strong> sibssorg@gmail.com<br>
+          </p>
+        </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-            </ul>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="/support.html">Support</a></li>
-            </ul>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="/join.html">Join Us</a></li>
-            </ul>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="/ourteam.html">Our Team</a></li>
-            </ul>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="faq.html">Frequently Asked Questions</a></li>
-            </ul>
-          </div>  
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+          </ul>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="/support.html">Support</a></li>
+          </ul>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="/join.html">Join Us</a></li>
+          </ul>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="/ourteam.html">Our Team</a></li>
+          </ul>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="faq.html">Frequently Asked Questions</a></li>
+          </ul>
         </div>
       </div>
+    </div>
 
 
     </div>
 
-    
+
 
     <div class="container">
 
@@ -353,21 +377,26 @@ How do I see it, SIBSS is that opportunity for youth. A great nation cannot be f
         </div>
         <div class="social-links text-center text-md-right pt-3 pt-md-0">
           <a href="https://sibss.page.link/twitter" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://sibss.page.link/facebook" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://sibss.page.link/facebook" target="_blank" class="facebook"><i
+              class="bx bxl-facebook"></i></a>
           <a href="https://sibss.page.link/reddit" target="_blank" class="linkedin"><i class="bx bxl-reddit"></i></a>
-          <a href="https://sibss.page.link/instagram" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://sibss.page.link/youtube" target="_blank" class="google-plus"><i class="bx bxl-youtube"></i></a>
+          <a href="https://sibss.page.link/instagram" target="_blank" class="instagram"><i
+              class="bx bxl-instagram"></i></a>
+          <a href="https://sibss.page.link/youtube" target="_blank" class="google-plus"><i
+              class="bx bxl-youtube"></i></a>
           <a href="https://sibss.page.link/discord" target="_blank" class="linkedin"><i class="bx bxl-discord"></i></a>
-          <a href="https://sibss.page.link/linkedin" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://sibss.page.link/linkedin" target="_blank" class="linkedin"><i
+              class="bx bxl-linkedin"></i></a>
         </div>
       </div>
 
     </div>
   </footer>
-  
-  <!-- End Footer --><!-- End Footer -->
 
-  
+  <!-- End Footer -->
+  <!-- End Footer -->
+
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
