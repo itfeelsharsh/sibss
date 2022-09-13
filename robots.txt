@@ -1,2 +1,12 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
+
+User-agent: Googlebot-Image
+Disallow: /assets/img/team-members/yuv.jpg
+Disallow: /assets/img/team-members/xavier.jpg
+Disallow: /assets/img/team-members/airplane.jpg
+Disallow: /assets/img/team-members/pallavi.jpg
+Disallow: /assets/img/team-members/gudda.jpg
+Disallow: /assets/img/team-members/kartik.jpg
+Disallow: /assets/img/team-members/aumvats.jpg
+Disallow: /assets/img/team-members/riya.jpg
