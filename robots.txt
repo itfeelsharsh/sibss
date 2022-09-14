@@ -1,5 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
-User-agent: *
 
 User-agent: Googlebot-Image
 Disallow: /assets/img/team-members/yuv.jpg
